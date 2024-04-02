@@ -1,0 +1,5 @@
+package com.productscatalogue.productservice.DTO;
+
+public class ProductResponse {
+
+}

@@ -1,0 +1,27 @@
+package com.productscatalogue.productservice.Service;
+
+import org.springframework.stereotype.Service;
+
+import com.productscatalogue.productservice.DTO.ProductRequest;
+import com.productscatalogue.productservice.Repository.ProductRepository;
+import com.productscatalogue.productservice.model.Product;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class ProductService {
+	
+	private final ProductRepository productRepository;
+	
+	public ProductService(ProductRepository productReposity) {
+		this.productRepository = productReposity;
+	}
+	
+	public void createProduct(ProductRequest productRequest) {
+		
+	}
+	
+	
+
+}
