@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ProductServiceApplicationTests" project="product-service" tests="1" started="0" failures="0" errors="1" ignored="0">
+  <testsuite name="com.productscatalogue.productservice.ProductServiceApplicationTests" incomplete="true" displayname="ProductServiceApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.productscatalogue.productservice.ProductServiceApplicationTests]">
+    <error>org.testcontainers.containers.ContainerFetchException: Can't get Docker image: RemoteDockerImage(imageName=mongo:4.11.1, imagePullPolicy=DefaultPullPolicy(), imageNameSubstitutor=org.testcontainers.utility.ImageNameSubstitutor$LogWrappedImageNameSubstitutor@7efe7b87)&#13;
+	at org.testcontainers.containers.GenericContainer.getDockerImageName(GenericContainer.java:1364)&#13;
+	at org.testcontainers.containers.GenericContainer.doStart(GenericContainer.java:359)&#13;
+	at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:330)&#13;
+	at org.testcontainers.junit.jupiter.TestcontainersExtension$StoreAdapter.start(TestcontainersExtension.java:280)&#13;
+	at org.testcontainers.junit.jupiter.TestcontainersExtension$StoreAdapter.access$200(TestcontainersExtension.java:267)&#13;
+	at org.testcontainers.junit.jupiter.TestcontainersExtension.lambda$null$4(TestcontainersExtension.java:82)&#13;
+	at org.testcontainers.junit.jupiter.TestcontainersExtension.lambda$startContainers$5(TestcontainersExtension.java:82)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at org.testcontainers.junit.jupiter.TestcontainersExtension.startContainers(TestcontainersExtension.java:82)&#13;
+	at org.testcontainers.junit.jupiter.TestcontainersExtension.beforeAll(TestcontainersExtension.java:56)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+Caused by: com.github.dockerjava.api.exception.NotFoundException: Status 404: {"message":"manifest for mongo:4.11.1 not found: manifest unknown: manifest unknown"}
+&#13;
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:241)&#13;
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269)&#13;
+	at java.base/java.lang.Thread.run(Thread.java:840)&#13;
+&#13;
+</error>
+    <testcase name="shouldCreateProduct" classname="com.productscatalogue.productservice.ProductServiceApplicationTests" incomplete="true" displayname="shouldCreateProduct()" uniqueid="[engine:junit-jupiter]/[class:com.productscatalogue.productservice.ProductServiceApplicationTests]/[method:shouldCreateProduct()]"/>
+  </testsuite>
+</testrun>
